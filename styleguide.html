@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Joanna Lin</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Joanna Lin</h1>
+
+      <nav>        
+        <p>
+          <a class="button-nav" href="#interactive_elements">Interactive Elements</a> | 
+          <a class="button-nav" href="#text_elements">Text Elements</a> | 
+           <a class="button-nav" href="#citations">Citations</a> 
+        </p>
+      </nav>
+    </header>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.text-link</p>
+  
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#" class="text-link"&gt;in-text link&lt;/a&gt;</code>
+  
+          <h4>Rendered element:</h4>
+          <a class="text-link" href="#">in-text link</a>
+
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.submit-button</p>
+  
+          <h4>Sample code:</h4>
+          <code>&lt;input class="submit-button" type="submit" value="Submit"&gt;</code>
+  
+          <h4>Rendered element:</h4>
+          <input class="button" type="submit" value="Submit">
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+            <label for="firstname">First name:</label>
+            <input class="text-input" type="text" id="fname" name="fname">
+            <br><br>
+            <label for="lastname">Last name:</label>
+            <input class="text-input" type="text" id="lname" name="lname">
+            <br><br>
+            <label for="email">Email:</label>
+            <input class="text-input" type="text" id="email" name="email">
+            <br><br>
+            <input class="button" type="submit" value="Submit">
+
+            <h4>CSS selector:</h4>
+            <p>.text-input</p>
+    
+            <h4>Sample code:</h4>
+            <code>&lt;input class="text-input" type="text" id="fname" name="fname"&gt;</code>
+    
+            <h4>Rendered element:</h4>
+            <label for="fname">First name:</label>
+            <input class="text-input" type="text" id="fname" name="fname">
+
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <form>
+          <input type="radio" id="option1" name="options" value="option1">
+          <label for="option1">Option 1</label><br>
+          
+          <input type="radio" id="option2" name="options" value="option2">
+          <label for="option2">Option 2</label><br>
+          
+          <input type="radio" id="option3" name="options" value="option3">
+          <label for="option3">Option 3</label><br>
+        </form>
+
+        <h4>CSS selector:</h4>
+        <p>.radio-button</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input class="radio-button" type="radio" id="option1" name="options" value="option1"&gt;</code>
+        <code>&lt;label class="radio-button" for="option1">Option1&lt;/label&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <input type="radio" id="option1" name="options" value="option1">
+        <label for="option1">Option 1</label><br>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.image</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="">&lt;img class="image" src="horsie.jpg"&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a href="https://jovnnv.com/"><img src="assets/Joanna Lin 2023 Crop.jpg" class="image" alt="Joanna Lin Headshot" width="250"></a>
+
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+        <h4>CSS selector:</h4>
+        <p>h1</p>
+        
+        <h4>Sample code:</h4>
+        <code>&lt;h1&gt;Joanna Lin&lt;/h1&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <h1>Joanna Lin</h1>
+        <br>
+        <h4>CSS selector:</h4>
+        <p>h2</p>
+        <h4>Rendered element:</h4>
+        <h2>About</h2>
+        <br>
+        <h4>CSS selector:</h4>
+        <p>h3</p>
+        <h4>Rendered element:</h4>
+        <h3>Process</h3>
+        <br>
+        <h4>CSS selector:</h4>
+        <p>h4</p>
+
+        <h4>Rendered element:</h4>
+        <h4>Example</h4>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <h4>CSS selector:</h4>
+        <p>p</p>
+        <br>
+        <p>As a graphic designer, I believe in the power of visual communication to inspire, inform, and connect. With a passion for creativity and a commitment to excellence, I strive to deliver designs that not only meet my clients' objectives but exceed their expectations. Through a combination of strategic thinking, technical skill, and artistic vision, I bring ideas to life in ways that resonate with audiences and drive results. Whether it's crafting a brand identity, designing a website, or developing marketing materials, I approach each project with enthusiasm and dedication, ensuring a seamless process from concept to completion. My goal is not only to create beautiful and impactful designs but to forge lasting partnerships built on trust, collaboration, and mutual success.</p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <h4>CSS selector:</h4>
+        <p>ol</p>
+
+        <h4>Process</h4>
+        <ol>
+          <li>Step 1</li>
+          <li>Step 2</li>
+          <li>Step 3</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Lato [Type of font]. (n.d.). Google Fonts. Retrieved January 29, 2024, from <a href="https://fonts.google.com/specimen/Lato?query=lato">https://fonts.google.com/specimen/Lato?query=lato</a></li>
+        <li>Pier Sans [Type of font]. (n.d.). Pangram Pangram. Retrieved January 29, 2024, from <a href="https://pangrampangram.com/products/pier-sans">https://pangrampangram.com/products/pier-sans</a></li>
+      </ul>
+
+    </section>
+
+
+
+  </body>
+</html>
