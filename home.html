@@ -13,6 +13,7 @@
       @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
     </style>
     
+	<script src="main.js"></script>
 </head>
 <body>
     <header>
@@ -40,27 +41,31 @@
 
     </section>
 
-    <section class="project" id="projects">
+    <section class="project fadein" id="projects">
         <h2>Featured Projects</h2>
         
         <div class="container">
             <div class="item">
                 <a href="prismatica.html">
-                    <img src="assets/prismatica.png" class="image" alt="prismatica image" title="prismatica">
+                    <img src="assets/prismatica.png" class="thumbnail" alt="prismatica image" title="prismatica">
                     <h3 class="projecttitle">Prismatica</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="fureverhome.html">
+                    <img src="assets/FurEverHome.png" class="thumbnail" alt="FurEverHome Logo" title="FurEverHome Logo">
+                    <h3 class="projecttitle">FurEverHome</h3>
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact fadein" id="contact">
         <h2>Let's Get In Touch</h2>
-        <!--
-        <a href="mailto:jsl55@sfu.ca">jsl55@sfu.ca</a>
-        -->
 
         <section>
-            <form action="#" method="post">
+            <form method="post" action="submit.html">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required class="text-input">
     
@@ -70,9 +75,29 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required class="text-input"></textarea>
     
-                <input type="submit" value="Submit" class="button">
+                <input type="submit" value="Submit" class="button" id="submitButton">
             </form>
         </section>
     </section>
+
+    <footer>
+        <div class="container">
+            <div class="column2">
+                <p>&copy;2024 Joanna Lin</p>
+            </div>
+
+            <div class="column1">
+                <h4>Contact</h4>
+                <a href="mailto:jsl55@sfu.ca"><p>jsl55@sfu.ca</p></a>
+                <a href="https://www.linkedin.com/in/joanna-s-lin/" target="_blank"><p>LinkedIn</p></a>
+            </div>
+
+            <div class="column1">
+                <h4>Links</h4>
+                <a href="assets/Joanna_Lin_Resume_2023_V1.pdf" target="_blank"><p>Resume</p></a>
+                <a href="styleguide.html"><p>Style Guide</p></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

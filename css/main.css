@@ -27,7 +27,14 @@ body {
   color: #8C4F46;
   margin-right: 10%;
   margin-left: 10%;
-  margin-bottom: 10%;
+}
+
+footer {
+  margin-top: 5em;
+}
+
+footer p {
+  margin-bottom: 1em;
 }
 
 .element {
@@ -43,7 +50,12 @@ h1 {
   letter-spacing: 2px;
   color: #D7B8AD;
   font-size: 2.1rem;
+  transition-property: color; 
+  transition-duration: 0.5s;
+}
 
+h1:hover {
+  color:#D7D5CB;
 }
 
 h2 {
@@ -153,6 +165,7 @@ a:hover {
   border: solid;
   border-color:#D7B8AD;
   border-radius: 1rem;
+  border-width: 1px;
   color:#8C4F46;
   margin-top: 1rem;
   font-size: 0.8rem;
@@ -178,7 +191,7 @@ a:hover {
 }
 
 input[type="text"], input[type="email"]{
-  width: 25%;
+  width: 20em;
 }
 
 input[type="radio"] {
@@ -199,6 +212,18 @@ label {
 textarea {
   width: 50%;
   height: 4em;
+  font-family: Lato, sans-serif;
+}
+
+.thumbnail {
+  max-width:100%;
+
+}
+
+.thumbnail:hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  transform: scale(1.05); 
+  box-shadow: 0 0 10px rgba(215, 213, 203, 1); 
 }
 
 /* 
@@ -217,7 +242,6 @@ ol {
   color: #A7776B;
   margin-left: 1em;
 }
-
 
 
 /* 
@@ -254,13 +278,22 @@ ol {
   box-sizing: border-box;
 }
 
+.column2 {
+  flex: 2; 
+}
+
+.column1 {
+  flex: 1; 
+  padding: 0 20px;
+}
+
 /* 
   HOME PAGE -------------------
 */
 
 .hero {
-  background-color: #D7B8AD;
-  background-size: cover;;
+  background-color: #F4F3F1;
+  background-size: cover;
   max-width: 100%;
   padding: 20% 10%;
   background-image: url("../assets/illustration.png");
@@ -271,6 +304,44 @@ ol {
   font-size: 200%;
 }
 
+.hero p {
+  font-size: 1.2rem;
+}
+
+.hero p:hover {
+  color: #A7776B;
+  transition-property: color; 
+  transition-duration: 0.5s;
+}
+
+/* 
+  ABOUT PAGE -------------------
+*/
+
+.links {
+  background-color: #D7B8AD;
+  color: white;
+  padding: 6%;
+}
+
+.links h2 {
+  padding-bottom: 1em;;
+}
+
+.links p {
+  color: white;
+  font-size: 1.1rem;
+  transition-property: color; 
+  transition-duration: 0.5s;
+}
+
+.links p:hover {
+  color: #8C4F46;
+}
+
+.icon {
+  padding-right: 10px;
+}
 /* 
   PRISMATICA -------------------
 */
@@ -303,6 +374,11 @@ ol {
   height: 100%;
 }
 
+.figmaembed {
+  width: 100%;
+  height: 700px;
+}
+
 /* 
   MEDIA QUERIES -------------------
 */
@@ -314,3 +390,24 @@ ol {
   }
 }
 
+@media screen and (max-width: 800px) {
+  textarea {
+    width: 100%;
+  }  
+}
+
+@media screen and (max-width: 600px) {
+  input[type="text"], input[type="email"]{
+    width: 100%;
+  }
+
+  .container{
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%; 
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+  }
+}
