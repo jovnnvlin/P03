@@ -1,0 +1,419 @@
+
+$lightpink: #D7B8AD;
+$pink: #A7776B;
+$darkpink: #8C4F46;
+$beige: #D7D5CB;
+$lightgrey: #F4F3F1;
+$grey: #8c8d92;
+
+@font-face {
+  font-family: PierSansBold;
+  src: url(font/PPPierSans-Bold.otf);
+}
+
+@font-face {
+  font-family: PierSans;
+  src: url(font/PPPierSans-Regular.otf);
+}
+
+
+body {
+  font-family: Lato, sans-serif;
+  padding: 2rem;
+  color: $darkpink;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+footer {
+  margin-top: 5em;
+}
+
+footer p {
+  margin-bottom: 1em;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color:$lightgrey;
+}
+
+h1 {
+  font-family: PierSansBold, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $lightpink;
+  font-size: 2.1rem;
+  transition-property: color; 
+  transition-duration: 0.5s;
+}
+
+h1:hover {
+  color: $beige;
+}
+
+h2 {
+  font-family: PierSans;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: $pink;
+  margin-top: 0.5rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  color: $pink;
+  letter-spacing: 1px;
+}
+
+h4 {
+  color: $grey;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+ul {
+  line-height: 1.5em;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color:$lightgrey;
+  padding: 0.5rem;
+  display: block;
+}
+
+section {
+  margin-top: 5em;
+}
+
+.centeralign {
+  text-align: center;
+}
+
+.spacer {
+  padding-bottom: 4rem;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: #A7776B;
+  text-decoration: none;
+  transition-property: color; 
+  transition-duration: 0.5s;
+  letter-spacing: .5px;
+}
+
+.button-nav:hover, .button-nav:focus {
+  color: #D7D5CB;
+
+}
+
+nav {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
+
+nav a {
+  padding-right: 2em;
+}
+
+.portfolionav a {
+  margin-right: 1em;
+}
+
+a {
+  color: $lightpink;
+  text-decoration: none;
+  transition-property: color; 
+  transition-duration: 0.5s;
+}
+
+a:hover {
+  color: $beige;
+}
+
+.button {
+  display: block;
+  background-color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: solid;
+  border-color: $lightpink;
+  border-radius: 1rem;
+  border-width: 1px;
+  color: $darkpink;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.button:hover {
+  background-color: $lightpink;
+  border-color: white;
+  color: white;
+}
+
+.text-input {
+  border-radius: 1rem;
+  border-color: $beige;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0.3rem;
+  margin-left: 0;
+  margin-top: 1em;
+}
+
+input[type="text"], input[type="email"]{
+  width: 20em;
+}
+
+input[type="radio"] {
+  border-color: $pink;
+  color: $pink;
+}
+
+input[type="radio"]:checked {
+  border-color: $darkpink;
+  color: $darkpink;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+}
+
+textarea {
+  width: 50%;
+  height: 4em;
+  font-family: Lato, sans-serif;
+}
+
+.thumbnail {
+  max-width:100%;
+
+}
+
+.thumbnail:hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  transform: scale(1.05); 
+  box-shadow: 0 0 10px rgba(215, 213, 203, 1); 
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+ol {
+  line-height: 1.5rem;
+}
+
+.subhead {
+  font-size: 1rem;
+  text-transform: lowercase;
+  font-family: PierSans;
+  letter-spacing: 1.5px;
+  color:  $pink;
+  margin-left: 1em;
+}
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+.icon {
+  width: 10%;
+}
+
+.image {
+  max-width:100%;
+}
+
+
+.example-img {
+  width: 60%;
+}
+
+/* 
+  GRID -------------------
+*/
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  padding-top: 2em;
+}
+
+.item {
+  width: calc(50% - 30px); 
+  margin-bottom: 20px; 
+  box-sizing: border-box;
+}
+
+.column2 {
+  flex: 2; 
+}
+
+.column1 {
+  flex: 1; 
+  padding: 0 20px;
+}
+
+/* 
+  HOME PAGE -------------------
+*/
+
+.hero {
+  background-color: $lightgrey;
+  background-size: cover;
+  max-width: 100%;
+  padding: 20% 10%;
+  background-image: url("../assets/illustration.png");
+}
+
+
+.hero h2 {
+  font-size: 250%;
+
+}
+
+.hero h3 {
+  font-size: 200%;
+  color: $grey;
+  font-family: PierSans;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.hero p:hover {
+  color:  $pink;
+  transition-property: color; 
+  transition-duration: 0.5s;
+}
+
+
+/* 
+  ABOUT PAGE -------------------
+*/
+
+.links {
+  background-color: $lightpink;
+  color: white;
+  padding: 6%;
+}
+
+.links h2 {
+  padding-bottom: 1em;;
+}
+
+.links p {
+  color: white;
+  font-size: 1.1rem;
+  transition-property: color; 
+  transition-duration: 0.5s;
+}
+
+.links p:hover {
+  color: $darkpink;
+}
+
+.icon {
+  padding-right: 10px;
+}
+/* 
+  PRISMATICA -------------------
+*/
+
+.image50 {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* 
+  IFRAME -------------------
+*/
+
+.vidcontainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.figmaembed {
+  width: 100%;
+  height: 700px;
+}
+
+/* 
+  MEDIA QUERIES -------------------
+*/
+
+@media screen and (max-width: 800px) {
+  nav {
+    position: relative;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  textarea {
+    width: 100%;
+  }  
+}
+
+@media screen and (max-width: 700px) {
+  input[type="text"], input[type="email"]{
+    width: 100%;
+  }
+
+  .container{
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%; 
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+  }
+}

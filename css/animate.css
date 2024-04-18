@@ -9,3 +9,61 @@
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
 }
+
+svg {
+    position: absolute;
+    top: 185vh;
+    right: 0vw;
+    max-width: 40%;
+    z-index: 0;
+    opacity: 0.5;;
+}
+
+@media screen and (max-width: 800px) {
+    svg {
+        display: none;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-20deg);
+      }
+      to {
+        transform: rotate(20deg);
+      }
+}
+
+.rotate {
+    animation: rotate 5s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fade-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+@keyframes grow-left {
+from {
+transform: scaleX(0);
+}
+to {
+transform: scaleX(1);
+}
+}
+
+.faderight, .faderightdelay {
+    opacity: 0;
+    animation: fade-in-right ease 0.7s forwards;
+  }
+  
+  .faderightdelay {
+    animation-delay: 0.8s;
+  }
