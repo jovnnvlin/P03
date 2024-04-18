@@ -59,6 +59,8 @@ transform: scaleX(1);
 }
 }
 
+/* adapted from https://dev.to/caroso1222/how-to-create-fancy-revealing-animations-with-these-simple-css-tricks-4gjk */
+
 .faderight, .faderightdelay {
     opacity: 0;
     animation: fade-in-right ease 0.7s forwards;
